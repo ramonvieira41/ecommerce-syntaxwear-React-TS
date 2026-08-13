@@ -1,14 +1,14 @@
 import Logo from "@/assets/images/logo.png"
-import IconUser from "@/assets/images/icone-perfil.png"
-import IconCart from "@/assets/images/icone-loja.png"
-import IconAbout from "@/assets/images/icone-sobre.png"
+import IconUser from "@/assets/images/user.png"
+import IconCart from "@/assets/images/cart.png"
+import IconAbout from "@/assets/images/about.png"
 
 export const Header = () => {
     return (
         <div className="relative">
-            <header className="fixed top-0 left-0 right-0 z-10 mx-10">
-                <div className=" bg-amber-700 max-w-330 mx-auto flex justify-between items-center py-5 px-7 rounded-2xl mt-5">
-                    <img src={Logo} alt="Logo SyntaxWear" className="w-32 md:w-36" />
+            <header className="fixed top-10 left-0 right-0 z-10 mx-10">
+                <div className="bg-white max-w-330 mx-auto flex justify-between items-center py-3 px-7 rounded-2xl mt-5">
+                    <img src={Logo} alt="Logo BoxTech" className="w-32 md:w-36" />
 
                     <nav className="hidden md:block">
                         <ul className="flex gap-10">
