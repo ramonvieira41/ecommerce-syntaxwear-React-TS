@@ -18,7 +18,7 @@ export const Categories = () => {
                 <div key={index} style={{ backgroundImage: `url(${category.image})` }} className=" h-125 bg-cover bg-center rounded-[20px] relative flex justify-center items-center text-white shrink-0 w-[95%] md:w-1/2 lg:w-full snap-center">
                     <div className="absolute inset-0 bg-black/30 rounded-[20px]"></div>
 
-                    <div className="relative">
+                    <div className="relative text-xl">
                         <Button variant="secondary">{category.name}</Button>
                     </div>
                 </div>
