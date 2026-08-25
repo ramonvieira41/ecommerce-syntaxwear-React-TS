@@ -2,12 +2,13 @@ import Logo from "@/assets/images/logo.png"
 import IconUser from "@/assets/images/user.png"
 import IconCart from "@/assets/images/cart.png"
 import IconAbout from "@/assets/images/about.png"
+import { Link } from "@tanstack/react-router"
 
 export const Header = () => {
     return (
         <div className="relative">
             <header className="fixed top-10 left-0 right-0 z-10 mx-10">
-                <div className="bg-white max-w-330 mx-auto flex justify-between items-center py-3 px-7 rounded-2xl mt-5">
+                <div className="bg-white text-black max-w-330 mx-auto flex justify-between items-center py-3 px-7 rounded-2xl mt-5">
                     <img src={Logo} alt="Logo BoxTech" className="w-32 md:w-36" />
 
                     <nav className="hidden md:block">
@@ -22,7 +23,11 @@ export const Header = () => {
                         <ul className="flex gap-4 md:gap-10">
                             <li className="hidden md:block"><a href="#">Nossas Lojas</a></li>
                             <li className="hidden md:block"><a href="#">Sobre</a></li>
-                            <li><a href="#"> <img src={IconUser} alt="Ícone de Usuário" /></a></li>
+                            <li>
+                                <Link to="/sign-in">
+                                    <img src={IconUser} alt="Ícone de Usuário" />
+                                </Link>
+                            </li>
                             <li><a href="#"><img src={IconAbout} alt="Ícone Sobre" /></a></li>
                             <li><a href="#"><img src={IconCart} alt="Ícone do Carrinho" /></a></li>
                         </ul>
