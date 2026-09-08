@@ -16,6 +16,7 @@ function RouteComponent() {
   // Calcula o preço com desconto de 10%
   const discountPrice = originalPrice * 0.9
 
+// Calcula o preço em 6 parcelas
   const inInstallmentsPrice = originalPrice / 6
 
   if (!filteredProduct) {

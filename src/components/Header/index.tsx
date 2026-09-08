@@ -3,6 +3,7 @@ import IconUser from "@/assets/images/user.png"
 import IconCart from "@/assets/images/cart.png"
 import IconAbout from "@/assets/images/about.png"
 import { Link } from "@tanstack/react-router"
+import { ShoppingCart } from "../ShoppingCart"
 
 export const Header = () => {
     return (
@@ -32,7 +33,8 @@ export const Header = () => {
                                 </Link>
                             </li>
                             <li><a href="#"><img src={IconAbout} alt="Ícone Sobre" /></a></li>
-                            <li><a href="#"><img src={IconCart} alt="Ícone do Carrinho" /></a></li>
+                            {/* <li><a href="#"><img src={IconCart} alt="Ícone do Carrinho" /></a></li> */}
+                            <ShoppingCart />
                         </ul>
                     </nav>
                 </div>
