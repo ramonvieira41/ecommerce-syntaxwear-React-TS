@@ -12,16 +12,16 @@ export const ShoppingCart = () => {
     return (
         <>
             <button
-        className="relative cursor-pointer"
-        onClick={() => setIconIsOpen(!iconIsOpen)}
-      >
-        <img src={IconCart} alt="Ícone carrinho de compras" />
-        {cart.length > 0 && (
-          <span className="absolute -top-1.5 -right-2 bg-red-500 text-white rounded-full w-4 h-4 flex items-center justify-center text-xs">
-            {cart.length}
-          </span>
-        )}
-      </button>
+                className="relative cursor-pointer"
+                onClick={() => setIconIsOpen(!iconIsOpen)}
+            >
+                <img src={IconCart} alt="Ícone carrinho de compras" />
+                {cart.length > 0 && (
+                    <span className="absolute -top-1.5 -right-2 bg-red-500 text-white rounded-full w-4 h-4 flex items-center justify-center text-xs">
+                        {cart.length}
+                    </span>
+                )}
+            </button>
 
             <div className={`${iconIsOpen ? "bg-black/70 visible" : "bg-transparent invisible"} fixed top-0 bottom-0 left-0 right-0`} onClick={() => setIconIsOpen(!iconIsOpen)}>
 
