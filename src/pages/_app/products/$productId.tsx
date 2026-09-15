@@ -26,7 +26,14 @@ function RouteComponent() {
   const inInstallmentsPrice = originalPrice / 6
 
   if (!filteredProduct) {
-    return <div>Produto não encontrado</div>
+    return (
+      <section className='container mb-10 pt-44 md:pt-54 pb-10 md:px-10 text-center text-black min-h-[80vh] flex flex-col justify-center items-center'>
+        <h1 className='text-3xl font-bold mb-4'>Produto não encontrado</h1>
+        <p className='mb-4'>O produto que você está procurando não está disponível ou foi removido.</p>
+        <Link to="/products" className='text-accent hover:text-accent-hover hover:underline'>
+          Voltar para Produtos
+        </Link>
+      </section>)
   }
 
   return (
