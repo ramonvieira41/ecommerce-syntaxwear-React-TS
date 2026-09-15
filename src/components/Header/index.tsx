@@ -41,13 +41,13 @@ export const Header = () => {
                             <li className="hidden lg:block"><Link to="/our-stores">Nossas Lojas</Link></li>
                             <li className="hidden lg:block"><Link to="/about">Sobre</Link></li>
                             <li>
-                                <li className="lg:hidden">
-                                    <MenuMobile navLinks={navLinks} />
-                                </li>
                                 <Link to="/sign-in" className="hidden lg:block">
                                     <img src={IconUser} alt="Ícone de Usuário" />
                                 </Link>
                             </li>
+                            <li className="lg:hidden">
+                                    <MenuMobile navLinks={navLinks} />
+                                </li>
                             <li className="hidden lg:block">
                                 <Link to="/about">
                                     <img src={IconAbout} alt="ícone de Sobre" /></Link>

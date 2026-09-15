@@ -4,6 +4,7 @@ import { Link } from '@tanstack/react-router'
 import { formatCurrency } from '../../../utils/format-currency'
 import { useContext } from 'react'
 import { CartContext } from '../../../components/contexts/CartContext'
+import { CEPForm } from '../../../components/CEPForm'
 
 export const Route = createFileRoute('/_app/products/$productId')({
   component: RouteComponent,
@@ -21,7 +22,7 @@ function RouteComponent() {
   // Calcula o preço com desconto de 10%
   const discountPrice = originalPrice * 0.9
 
-// Calcula o preço em 6 parcelas
+  // Calcula o preço em 6 parcelas
   const inInstallmentsPrice = originalPrice / 6
 
   if (!filteredProduct) {
@@ -57,14 +58,11 @@ function RouteComponent() {
           <div className='mb-3'>
             <p className='text-sm'>Calcular prazo de entrega</p>
 
-            <form className='flex gap-3'>
-              <input type="text" placeholder="Digite seu CEP" className='border border-[#c0c0c0] rounded-md p-3' />
-              <button className='bg-black text-white py-3 px-6 rounded-md cursor-pointer hover:bg-gray-800'>Calcular</button>
-            </form>
+            <CEPForm />
           </div>
 
           <button className='bg-black text-white rounded-md p-5 w-full cursor-pointer hover:bg-gray-800' onClick={() => addInCart(filteredProduct)}>Adicionar ao carrinho</button>
-          
+
         </div>
       </div>
 

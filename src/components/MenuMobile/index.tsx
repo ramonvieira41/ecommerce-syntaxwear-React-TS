@@ -29,7 +29,7 @@ export const MenuMobile = ({ navLinks }: MenuMobileProps) => {
                             <Link to="/sign-in" className="flex items-center gap-3">
                                 <FaRegUserCircle className="h-6 w-6" />
                                 <p>Olá! Faça seu login</p></Link>
-                                <IoMdClose className="h-6 w-6 cursor-pointer" onClick={() => setMenuIsOpen(!menuIsOpen)} />
+                            <IoMdClose className="h-6 w-6 cursor-pointer" onClick={() => setMenuIsOpen(!menuIsOpen)} />
                         </nav>
                     </header>
 
