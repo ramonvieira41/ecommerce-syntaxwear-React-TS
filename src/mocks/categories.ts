@@ -1,5 +1,5 @@
 import tenisBranco from "@/assets/images/tenis-branco.jpg";
-import tenisCinza from "@/assets/images/tenis-Cinza.jpg";
+import tenisCinza from "@/assets/images/tenis-cinza.jpg";
 import tenisColorido from "@/assets/images/tenis-colorido.jpg";
 import tenisFuturista from "@/assets/images/tenis-futurista.jpg";
 
