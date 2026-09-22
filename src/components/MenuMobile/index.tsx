@@ -21,7 +21,7 @@ export const MenuMobile = ({ navLinks }: MenuMobileProps) => {
                 <img src={IconMenu} alt="Ícone carrinho de compras" />
             </button>
 
-            <div className={`${menuIsOpen ? "bg-black/70 visible" : "bg-transparent invisible"} fixed top-0 bottom-0 left-0 right-0 z-30`} onClick={() => setMenuIsOpen(!menuIsOpen)}>
+            <div className={`${menuIsOpen ? "bg-black/70 visible" : "bg-transparent invisible"} fixed top-0 bottom-0 left-0 right-0 z-30 transition-all duration-600 ease-in-out`} onClick={() => setMenuIsOpen(!menuIsOpen)}>
 
                 <div className={`${menuIsOpen ? "translate-x-0" : "-translate-x-full"} absolute bg-white top-0 bottom-0 pt-6 transition-all duration-500 ease-in-out w-full sm:w-75`} onClick={(e) => e.stopPropagation()}>
                     <header className="bg-black px-5 py-5 text-white">
