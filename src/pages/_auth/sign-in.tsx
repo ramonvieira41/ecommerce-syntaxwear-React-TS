@@ -16,7 +16,7 @@ export const Route = createFileRoute('/_auth/sign-in')({
 
 function RouteComponent() {
   return (
-    <section className="min-h-screen w-full flex justify-center items-center bg-[#f5f5f5] p-5 text-black">
+    <section className="min-h-screen w-full flex justify-center items-center bg-surface p-5 text-black">
       <div className="w-112.5 bg-white  rounded-2xl p-10 shadow-md">
         <div className='flex flex-col'>
           <Logo />

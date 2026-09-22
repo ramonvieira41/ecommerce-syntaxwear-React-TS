@@ -17,8 +17,8 @@ function RouteComponent() {
     </div>
 
     <div className='text-black px-8 py-16 lg:px-20 md:w-1/2 h-full flex flex-col justify-center'>
-      <h2 className='text-5xl lg:text-6xl font-medium text-[#333333] mb-8'>Sobre Nós</h2>
-      <p className='text-[#666666] text-lg leading-relaxed mb-5'>
+      <h2 className='text-5xl lg:text-6xl font-medium text-text mb-8'>Sobre Nós</h2>
+      <p className='text-text-secondary text-lg leading-relaxed mb-5'>
         Gostamos muito de calçados que unem estilos,conforto e durabilidade. Nossa missão é fazer nossos clientes se sentir bem a cada passo, oferecendo uma incrível experiência de compra e também uma variedades de escolhas de Tênis, Botas e Sapatos para todo tipo de ocasião.
       </p>
 
